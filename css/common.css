@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+#header, #he-login, #he-nav {
+  width: 100%; }
+
+.wd1002 {
+  width: 1002px;
+  margin: 0 auto; }
+
+.he-wl, .he-lo a {
+  font-size: 12px;
+  color: white; }
+
+.he-wl, .he-lo, #he-nav ul {
+  float: right; }
+
+#he-nav ul li {
+  float: left; }
+
+#he-login {
+  height: 25px;
+  background: url("../images/h_bg.png"); }
+
+.he-wl {
+  margin-right: 9px;
+  line-height: 25px; }
+
+.he-lo a {
+  margin-left: 34px; }
+
+#he-nav {
+  height: 82px;
+  background: url("../images/nav_bg.png"); }
+
+#he-nav img {
+  margin: 5px 0 0 9px; }
+
+#he-nav ul {
+  margin-top: 16px;
+  overflow: hidden; }
+
+#he-nav ul li {
+  margin-left: 40px;
+  border-top-style: solid;
+  border-top-width: 0;
+  font-size: 20px;
+  font-family: "Microsoft Yahei";
+  line-height: 64px;
+  -webkit-transition: border-top-width 0.5s ease 0;
+  -moz-transition: border-top-width 0.5s ease 0;
+  -ms-transition: border-top-width 0.5s ease 0;
+  transition: border-top-width 0.5s ease 0; }
+
+#he-nav ul li:hover {
+  border-top-width: 4px; }
+
+#he-nav ul li a {
+  color: #000000; }
+
+.origin {
+  border-color: #eea758; }
+
+.yellow {
+  border-color: #f4e690; }
+
+.green {
+  border-color: #a8f48b; }
+
+.deepGreen {
+  border-color: #9dd8ca; }
+
+.pink {
+  border-color: #f9bdea; }
+
+.violet {
+  border-color: #ddc4f7; }
