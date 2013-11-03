@@ -8,22 +8,25 @@ a {
 ul {
   list-style: none; }
 
-#header, #he-login, #he-nav {
+#header, #he-login, #he-nav, #footer {
   width: 100%; }
 
 .wd1002 {
   width: 1002px;
   margin: 0 auto; }
 
-.he-wl, .he-lo a {
+.he-wl, .he-lo a, #fo-nav > li, #fo-nav > li > ul > li > a {
   font-size: 12px;
   color: white; }
 
 .he-wl, .he-lo, #he-nav ul {
   float: right; }
 
-#he-nav ul li {
+#he-nav ul li, #fo-nav, #fo-nav > li, #fo-nav > li > img {
   float: left; }
+
+#header {
+  overflow: hidden; }
 
 #he-login {
   height: 25px;
@@ -83,3 +86,35 @@ ul {
 
 .violet {
   border-color: #ddc4f7; }
+
+#footer {
+  height: 303px;
+  background: url("../images/h_bg.png"); }
+
+#fo-nav {
+  margin-top: 37px; }
+
+#fo-nav > li {
+  height: 110px;
+  margin-right: 21px;
+  font-size: 16px;
+  font-family: "Microsoft Yahei"; }
+
+#fo-nav > li > img {
+  margin-right: 9px; }
+
+#fo-nav > li > ul {
+  margin-left: 8px;
+  margin-top: 19px; }
+
+#fo-nav > li > ul > li {
+  line-height: 12px;
+  padding-bottom: 10px;
+  border-left: 2px solid white; }
+
+#fo-nav > li > ul > li:last-child {
+  padding-bottom: 0; }
+
+#fo-nav > li > ul > li > a {
+  padding-left: 12px;
+  vertical-align: top; }

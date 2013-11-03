@@ -47,6 +47,7 @@ ul{
 //sass
 #header{
   @extend %w100;
+  overflow: hidden;
 }
 .wd1002{
   @extend %w1002center;
@@ -115,4 +116,41 @@ ul{
 }
 .violet{
   border-color: #ddc4f7;
+}
+#footer{
+  @extend %w100;
+  height: 303px;
+  background: url("../images/h_bg.png");
+}
+#fo-nav{
+  @extend %fl;
+  margin-top: 37px;
+}
+#fo-nav > li{
+  @extend %fl;
+  height: 110px;
+  margin-right: 21px;
+  @extend %f12_white;
+  @include font(16px);
+}
+#fo-nav > li > img{
+  @extend %fl;
+  margin-right: 9px;
+}
+#fo-nav > li > ul{
+  margin-left: 8px;
+  margin-top: 19px;
+}
+#fo-nav > li > ul > li {
+  line-height: 12px;
+  padding-bottom: 10px;
+  border-left: 2px solid white;
+}
+#fo-nav > li > ul > li:last-child{
+  padding-bottom: 0;
+}
+#fo-nav > li > ul > li > a{
+  @extend %f12_white;
+  padding-left: 12px;
+  vertical-align: top;
 }
