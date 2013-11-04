@@ -8,6 +8,9 @@ a {
 ul {
   list-style: none; }
 
+img {
+  border: none; }
+
 #header, #he-login, #he-nav, #footer {
   width: 100%; }
 
@@ -15,14 +18,14 @@ ul {
   width: 1002px;
   margin: 0 auto; }
 
-.he-wl, .he-lo a, #fo-nav > li, #fo-nav > li > ul > li > a {
+.he-wl, .he-lo a, #fo-nav > li, #fo-nav > li > ul > li > a, #fo-contact p, #copyright {
   font-size: 12px;
   color: white; }
 
-.he-wl, .he-lo, #he-nav ul {
+.he-wl, .he-lo, #he-nav ul, #fo-contact, #fo-contact p {
   float: right; }
 
-#he-nav ul li, #fo-nav, #fo-nav > li, #fo-nav > li > img {
+#he-nav ul li, #fo-nav, #fo-nav > li, #fo-nav > li > img, #fo-contact img {
   float: left; }
 
 #header {
@@ -118,3 +121,31 @@ ul {
 #fo-nav > li > ul > li > a {
   padding-left: 12px;
   vertical-align: top; }
+
+#fo-contact {
+  width: 300px;
+  margin-top: 37px; }
+  #fo-contact p {
+    position: relative;
+    top: -10px;
+    left: -18px;
+    font-size: 14px;
+    font-family: "Microsoft Yahei"; }
+    #fo-contact p span {
+      display: block;
+      margin-left: -5px;
+      font-size: 36px;
+      font-family: "Microsoft Yahei"; }
+  #fo-contact .con-center {
+    width: 290px;
+    margin: 0 auto; }
+    #fo-contact .con-center img {
+      margin-top: 11px;
+      margin-left: 5px; }
+
+#copyright {
+  clear: both;
+  padding-top: 27px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Microsoft Yahei"; }

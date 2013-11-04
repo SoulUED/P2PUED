@@ -8,6 +8,9 @@ a{
 ul{
   list-style: none;
 }
+img{
+  border: none;
+}
 //sass
 %w100{
   width: 100%;
@@ -153,4 +156,40 @@ ul{
   @extend %f12_white;
   padding-left: 12px;
   vertical-align: top;
+}
+#fo-contact{
+  width: 300px;
+  @extend %fr;
+  margin-top: 37px;
+  img{
+    @extend %fl;
+  }
+  p{
+    @extend %fr;
+    position: relative;
+    top: -10px;
+    left: -18px;
+    @extend %f12_white;
+    @include font(14px);
+    span{
+      display: block;
+      margin-left: -5px;
+      @include font(36px);
+    }
+  }
+  .con-center{
+    width: 290px;
+    margin: 0 auto;
+    img{
+      margin-top: 11px;
+      margin-left: 5px;
+    }
+  }
+}
+#copyright{
+  clear: both;
+  padding-top: 27px;
+  text-align: center;
+  @extend %f12_white;
+  @include font(16px);
 }
