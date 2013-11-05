@@ -147,22 +147,26 @@
   .title{
     background-color:#9dd8ca;
   }
-  span{
+  
+  li{ 
+    border-bottom:1px solid #dadadb;
+    padding: 20px 0;
+  }
+  .list-head{    border-bottom:1px solid #dadadb;}
+  .list-head span{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width:(100%/7.5);
+    text-align: center; 
+  }
+}
+.loan-list{
+  div{
     display: inline-block;
     width:(100%/7.5);
     text-align: center; 
   }
-  li{ border-bottom:1px solid #dadadb;}
-  li span{
-    line-height: 120px;
-  }
-  .list-head{    border-bottom:1px solid #dadadb;}
-  .list-head span{
-    height: 40px;
-    line-height: 40px;
-  }
-}
-.loan-list{
   .loan-avatar{
     position:relative;
     img{
@@ -173,8 +177,8 @@
     }
     span{
       position: absolute;
-      top:81px;
-      right:29px;
+      top:60px;
+      right:28px;
       width:20px;
       height:20px;
       background-color:#75c145;
@@ -183,11 +187,55 @@
       line-height: 20px;
     }
   }
+  .loan-title{
+    overflow: hidden;
+  }
   .loan-title a{
-    color:#226e72
+    width:100%;
+    white-space: nowrap;
+    color:#226e72;
+  }
+  .loan-rank div{
+    display: inline-block;
+    width:30px;
+    height: 30px;
   }
   .loan-num{
     color:#fc7700;
+  }
+  .bar-out{
+    margin: 0 auto;
+    width: 80px;
+    height: 25px;
+    border: 1px solid #226e72;
+    @include radius(5px);
+  }
+  .bar-in{
+    position: relative;
+    margin: 2px;
+    width: 76px;
+    height: 21px;
+    background-color:#226e72;
+    @include radius(5px);
+    span{
+      width:100%;
+      position: absolute;
+      height: 21px;
+      line-height: 21px;
+      text-align: center;
+      font-size: 12px;
+      color:#fff;
+    }
+  }
+  .bar-complete{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width:0;
+    left:0;
+    background-color:#2e989e;
+  }
+  .bar-num{
+    left:0;
   }
 }
 

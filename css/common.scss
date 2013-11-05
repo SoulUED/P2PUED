@@ -62,6 +62,11 @@ img{
   -ms-transition: $style $start $ani $end;
   transition: $style $start $ani $end;
 }
+@mixin radius($value){
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  border-radius: $value;
+}
 //sass
 #header{
   @extend %w100;
@@ -231,7 +236,7 @@ $a:(20,30);
   margin: 0 auto;
   line-height: 30px;
   color:#fff;
-  font-size: 24px;
+  @include font(16px);
   font-weight:bold;
 }
 .rankA{ @include bgColor(#00ffcc);}
