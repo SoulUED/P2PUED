@@ -8,8 +8,22 @@ a{
 ul{
   list-style: none;
 }
+li{
+  list-style:none;
+}
 img{
   border: none;
+}
+.clearfix:after{
+  visibility: hidden;
+  display: block;
+  font-size:0;
+  content:" ";
+  clear:both;
+  height:0;
+}
+.clearfix{
+  zoom:1;
 }
 //sass
 %w100{
@@ -32,10 +46,11 @@ img{
 %font{
   font-family: "Microsoft Yahei";
 }
-@mixin font ($size: 12px,$family: "Microsoft Yahei"){
+@mixin font ($size: 12px,$family: "Microsoft Yahei",$weight:normal){
   font:{
     size: $size;
     family: $family;
+    weight: $weight;
   }
 }
 @mixin line_height ($height) {
@@ -46,6 +61,11 @@ img{
   -moz-transition: $style $start $ani $end;
   -ms-transition: $style $start $ani $end;
   transition: $style $start $ani $end;
+}
+@mixin radius($value){
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  border-radius: $value;
 }
 //sass
 #header{
@@ -193,3 +213,33 @@ img{
   @extend %f12_white;
   @include font(16px);
 }
+
+//define width
+$a:(20,30);
+@for $i from 1 to length($a)+1{
+  $w:nth($a,$i);
+  .w#{$w}{
+    width:$w+px;
+  }
+}
+
+//rank
+@mixin bgColor($color){
+  background-color:$color;
+}
+.rankA,
+.rankB,
+.rankC,
+.rankHR{
+  width:30px;
+  height:30px;
+  margin: 0 auto;
+  line-height: 30px;
+  color:#fff;
+  @include font(16px);
+  font-weight:bold;
+}
+.rankA{ @include bgColor(#00ffcc);}
+.rankB{ @include bgColor(#09c93b);}
+.rankC{ @include bgColor(#07ee58);}
+.rankHR{ @include bgColor(#ff001e);}
