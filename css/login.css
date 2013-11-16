@@ -228,10 +228,13 @@ html, body {
   border-color: red; }
 
 .form-item label.error {
-  color: red; }
+  color: red;
+  font-size: 12px; }
 
 #signup .form-item label.error {
-  width: auto; }
+  width: auto;
+  color: red;
+  font-size: 12px; }
 
 .guide {
   margin: 0 20px; }

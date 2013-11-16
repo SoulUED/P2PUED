@@ -67,6 +67,17 @@ img{
   -moz-border-radius: $value;
   border-radius: $value;
 }
+@mixin shadow($h-shadow,$v-shadow,$blur,$spread,$color){
+  -webkit-box-shadow: $h-shadow $v-shadow $blur $spread $color;
+  -moz-box-shadow: $h-shadow $v-shadow $blur $spread $color;
+  box-shadow: $h-shadow $v-shadow $blur $spread $color;
+}
+@mixin inset_shadow($h-shadow,$v-shadow,$blur,$spread,$color,$inset){
+  -webkit-box-shadow: $h-shadow $v-shadow $blur $spread $color $inset;
+  -moz-box-shadow: $h-shadow $v-shadow $blur $spread $color $inset;
+  box-shadow: $h-shadow $v-shadow $blur $spread $color $inset;
+
+}
 //sass
 #header{
   @extend %w100;

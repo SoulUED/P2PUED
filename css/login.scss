@@ -36,10 +36,13 @@ height: 4em;
 }
 .form-item label.error{
 	color: red;
+	font-size: 12px;
 }
 #signup{
 	.form-item label.error{
 		width: auto;
+		color: red;
+		font-size: 12px;
 	}
 }
 .guide{
