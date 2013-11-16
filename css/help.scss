@@ -12,6 +12,7 @@
 	padding: 2px;
 	@include shadow(0,0,10px,5px,#efefef);
 	background-color: #fff;
+	overflow: hidden;
 }
 #security-side{
 	#side-top{
@@ -33,7 +34,8 @@
 	@extend %fl;
 	width: 185px;
 	height: 100%;
-	padding-bottom: 30px;
+	margin-bottom: -9997px;
+	padding-bottom: 9999px;
 	background-color: #ededed;
 	ul{
 		width: 130px;
